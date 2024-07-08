@@ -1,0 +1,214 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+    text-decoration: none;
+}
+
+.header{
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-image: url(home\ resort.jpg)
+}
+  
+ul#menu li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 18px;
+    text-decoration: none;
+    font-family: "Georgia", serif;
+    font-size: 15px;
+    transition: 0.5s;
+}
+  
+ul#menu li a:hover:not(.active) {
+    background-color: #795c34;
+    border-radius: 15px;
+    transition: 0.5s;
+}
+  
+.active {
+    background-color: teal;
+    border-radius: 15px;
+ }
+
+nav#navbar{
+    width: 100%;
+    text-align: center;
+}
+
+.logo{
+    width: 150px;
+    margin: 20px 0;
+    cursor: pointer;
+}
+
+nav#navbar ul{
+    background: #af8c72;
+    width: 100%;
+}
+
+nav#navbar ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 18px 1px;
+    color: white;
+}
+
+nav#navbar.sticky{
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 13px 50px;
+    background: #af8c72;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: padding 1s;
+}
+
+nav#navbar.sticky ul{
+    width: auto;
+}
+
+.titleText{
+    text-align: center;
+    font-family: "Papyrus", cursive;
+    font-size: 3.5rem;
+    margin: 50px 0;  
+    font-weight: bold;
+    padding: 0 60px;
+}
+
+hr{
+    margin: 0 15%;
+    height: 4px;
+    border-width: 0;
+    background-color: tan;
+}
+
+.box-top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.comment-box:hover{
+    margin-top: 5px;
+    transition: 0.5s;
+}
+
+.comment-box{
+    width: 500px;
+    height: 240px;
+    background: white;
+    padding: 20px;
+    margin: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transition: 0.5s;
+}
+
+.Profile{
+    display: flex;
+    align-items: center;
+}
+
+.profile-image{
+    width: 70px;
+    height: 70px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    overflow: hidden;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.profile-image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.Name{
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+}
+
+.Name strong{
+    color: black;
+    font-size: 18px;
+}
+
+.Name span{
+    color: gray;
+    margin-top: 2px;
+}
+
+.comment p{
+    color: black;
+}
+
+.reviews{
+    color: #f9d71c;
+    float: top;
+    float: left;
+}
+
+.flex-container {
+    display: flex;
+}
+
+.flex-child_btn {
+    flex: 1;
+    height: 250px;
+}
+
+.flex-child {
+    flex: 1;
+    height: 300px;
+}  
+
+button a{
+    font-family: "Papyrus", fantasy;
+    font-weight: 550;
+}
+button.form-btn {
+    margin-top: 5rem;
+    width: 9em;
+    margin-left: 29.5rem;
+    padding: 10px 10px;
+    border-radius: 15px;
+    background-color: #a78164;
+    cursor: pointer;
+    margin-bottom: 10px;
+    font-size: 2rem;
+    border: transparent;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transition: 0.3s;
+}
+
+button.form-btn:hover {
+	background: #795c34;
+    color: rgb(159, 157, 157);
+    font-size: 2.1rem;
+    margin-top: 4.3rem;
+    margin-left: 28.5rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transition: 0.3s;
+}
+button.form-btn a{
+    color: white;
+    text-decoration: none;
+    transition: 0.1s;
+}
+button.form-btn a:hover{
+    color: rgb(159, 157, 157);
+    transition: 0.1s;
+}

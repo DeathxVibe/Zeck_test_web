@@ -1,0 +1,282 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header{
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-image: url(meetingroom3.jfif)
+}
+  
+ul#menu li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 18px;
+    text-decoration: none;
+    font-family: "Georgia", serif;
+    font-size: 15px;
+    transition: 0.5s;
+}
+  
+ul#menu li a:hover:not(.active) {
+    background-color: #795c34;
+    border-radius: 15px;
+    transition: 0.5s;
+}
+  
+.active {
+    background-color: teal;
+    border-radius: 15px;
+}
+
+nav#navbar{
+    width: 100%;
+    text-align: center;
+}
+
+.logo{
+    width: 150px;
+    margin: 20px 0;
+    cursor: pointer;
+}
+
+nav#navbar ul{
+    background: #af8c72;
+    width: 100%;
+}
+
+nav#navbar ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 18px 1px;
+    color: white;
+}
+
+nav#navbar.sticky{
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 13px 50px;
+    background: #af8c72;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: padding 1s;
+}
+
+nav#navbar.sticky ul{
+    width: auto;
+}
+.titleText{
+    text-align: center;
+    font-family: "Papyrus", cursive;
+    font-size: 3.5rem;
+    margin: 30px 0;  
+}
+
+hr{
+    margin: 0 15%;
+    height: 4px;
+    border-width: 0;
+    background-color: tan;
+}
+
+.wrapper {
+    width: 100%;
+    height: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    height: 400px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: start;
+}
+
+.card {
+    width: 80px;
+    border-radius: .75rem;
+    background-size: cover;
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 2rem;
+    margin: 0 10px;
+    display: flex;
+    align-items: flex-end;
+    transition: .6s cubic-bezier(.28,-0.03,0,.99);
+    box-shadow: 0px 10px 30px -5px rgba(0,0,0,0.8);
+}
+
+.card > .row {
+    color: white;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.card > .row > .icon {
+    background: #223;
+    color: white;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+}
+
+input {
+    display: none;
+}
+
+input:checked + label {
+    width: 600px;
+}
+
+input:checked + label .description {
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+}
+
+.card[for="c11"] {
+    background-image: url('meetingroom.jfif');
+}
+.card[for="c22"] {
+    background-image: url('meetingroom2.jfif');
+}
+.card[for="c33"] {
+    background-image: url('meetingroom3.jfif');
+}
+.card[for="c44"] {
+    background-image: url('meetingroom4.jfif');
+}
+
+.card[for="c1"] {
+    background-image: url('ballroom.jfif');
+}
+.card[for="c2"] {
+    background-image: url('ballroom2.jfif');
+}
+.card[for="c3"] {
+    background-image: url('ballroom3.jfif');
+}
+.card[for="c4"] {
+    background-image: url('ballroom4.jfif');
+}
+
+.flex-container {
+    font-family: 'poppins', sans-serif;
+    display: flex;
+}
+.flex-child {
+    flex: 1;
+    height: 360px;
+}  
+.flex-child:first-child {
+    margin-right: 20px;
+}
+.flex-child:last-child{
+    border-left: 5px darkolivegreen solid;
+}
+
+.icon{
+    padding-right: 3px;
+    font-size: 1.4rem;
+}
+.text p{
+    padding-bottom: 10px;
+    font-size: 1.2rem;
+    padding-left: 45px;
+}
+.text2 p{
+    padding-bottom: 10px;
+    font-size: 1.2rem;
+    padding-left: 20px;
+}
+
+.flex-container2 {
+    font-family: 'poppins', sans-serif;
+    display: flex;
+}
+.flex-child2 {
+    flex: 1;
+    height: 530px;
+}  
+.flex-child2:first-child {
+    margin-right: 20px;
+}
+.flex-child2:last-child{
+    border-left: 5px darkolivegreen solid;
+}
+
+div.enquire {
+    text-align: center;
+    font-family: Palatino, serif;
+    font-size: 2rem;
+    color: rosybrown;
+    padding: 1rem;
+    margin: 10px 0;
+
+}
+
+.card-content{
+    margin: auto;
+    background: #fff;
+    width: 65%;
+    height: 300px;
+}
+.card-content h3{
+    text-align: center;
+    color: #000;
+    padding: 10px 0;
+    font-size: 26px;
+    font-weight: 500;
+}
+.form-row{
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+}
+form select, form input{
+    display: block;
+    width: 100%;
+    margin: 15px 12px;
+    padding: 5px;
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #eee;
+    font-weight: 300;
+}
+form input[type = text], form input[type = number], form input::placeholder, select{
+    color: #9a9a9a;
+}
+form input[type = submit]{
+    color: #fff;
+    background: #f2745f;
+    padding: 12px 0;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+form input[type = submit]:hover{
+    opacity: 0.9;
+}
+@media(max-width: 992px){
+    .card-container{
+        grid-template-columns: 100%;
+        width: 100vw;
+    }
+    .card-img{
+        height: 330px;
+    }
+}

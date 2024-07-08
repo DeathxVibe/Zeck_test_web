@@ -1,0 +1,90 @@
+*{
+    padding: 0;
+    margin-top: 0;
+    box-sizing: border-box;
+}
+footer{
+    background-color: #af8c72;
+    padding-top: 20px;
+}
+.footerContainer{
+    width: 100%;
+}
+.sosialIcons{
+    display: flex;
+    justify-content: center;
+}
+.sosialIcons a{
+    text-decoration: none;
+    padding: 10px;
+    background-color: white;
+    margin: 10px;
+    border-radius: 50%;
+    transition: 0.5s;
+}
+.sosialIcons a i{
+    font-size: 1.8em;
+    color: #af8c72;
+    opacity: 0.9;
+    transition: 0.5s;
+}
+
+/* Hover Effect on Social Media Icons*/
+.sosialIcons a:hover{
+    background-color: #a07a5f;
+    transition: 0.5s;
+}
+.sosialIcons a i:hover{
+    color: white;
+    transition: 0.5s;
+}
+
+.footerNav{
+    margin: 10px 0;
+}
+.footerNav ul{
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+.footerNav ul li a{
+    font-family: "Georgia", serif;
+    color: white;
+    margin: 15px;
+    text-decoration: none;
+    font-size: 18px;
+    opacity: 0.7;
+    transition: 0.5s;
+}
+.footerNav ul li a:hover{
+    opacity: 1;
+}
+.footerBottom{
+    padding-top: 20px;
+    background-color: #af8c72;
+    padding-bottom: 10px;
+    text-align: center;
+}
+.footerBottom p{
+    color: white;
+    background-color: #af8c72;
+}
+.designer{
+    opacity: 0.7;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 400;
+    margin: 0px 5px;
+}
+
+@media (max-width:700px){
+    .footerNav ul{
+        flex-direction: column;
+    }
+    .footerNav ul li{
+        width: 100%;
+        text-align: center;
+        margin: 10px;
+    }
+}

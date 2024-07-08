@@ -1,0 +1,271 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+.header{
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-image: url(Dining\ hall.jpg)
+}
+  
+ul#menu li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 18px;
+    text-decoration: none;
+    font-family: "Georgia", serif;
+    font-size: 15px;
+    transition: 0.5s;
+}
+  
+ul#menu li a:hover:not(.active) {
+    background-color: #795c34;
+    border-radius: 15px;
+    transition: 0.5s;
+
+}
+  
+.active {
+    background-color: teal;
+    border-radius: 15px;
+}
+
+nav#navbar{
+    width: 100%;
+    text-align: center;
+}
+
+.logo{
+    width: 150px;
+    margin: 20px 0;
+    cursor: pointer;
+}
+
+nav#navbar ul{
+    background: #af8c72;
+    width: 100%;
+}
+
+nav#navbar ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 18px 1px;
+    color: white;
+}
+
+nav#navbar.sticky{
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 13px 50px;
+    background: #af8c72;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: padding 1s;
+}
+
+nav#navbar.sticky ul{
+    width: auto;
+}
+
+.titleText{
+    text-align: center;
+    font-family: "Papyrus", cursive;
+    font-size: 3.5rem;
+    margin: 30px 0;  
+}
+
+hr{
+    margin: 0 15%;
+    height: 4px;
+    border-width: 0;
+    background-color: tan;
+}
+.wrapper {
+    width: 100%;
+    height: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    height: 400px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: start;
+}
+
+.card {
+    width: 80px;
+    border-radius: .75rem;
+    background-size: cover;
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 2rem;
+    margin: 0 10px;
+    display: flex;
+    align-items: flex-end;
+    transition: .6s cubic-bezier(.28,-0.03,0,.99);
+    box-shadow: 0px 10px 30px -5px rgba(0,0,0,0.8);
+}
+
+.card > .row {
+    color: white;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.card > .row > .icon {
+    background: #223;
+    color: white;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+}
+
+input {
+    display: none;
+}
+
+input:checked + label {
+    width: 600px;
+}
+
+input:checked + label .description {
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+}
+
+/*================= Hermes Alimento ===============*/
+.card[for="HA1"] {
+    background-image: url('fast1.jpg');
+}
+.card[for="HA2"] {
+    background-image: url('fast2.jpg');
+}
+.card[for="HA3"] {
+    background-image: url('fast3.jpg');
+}
+.card[for="HA4"] {
+    background-image: url('fast4.jpg');
+}
+
+/*================= Nepolean Risotto ===============*/    
+.card[for="NR1"] {
+    background-image: url('Italian1.jpg');
+}
+.card[for="NR2"] {
+    background-image: url('Italian2.jpg');
+}
+.card[for="NR3"] {
+    background-image: url('Italian3.jpg');
+}
+.card[for="NR4"] {
+    background-image: url('Italian4.jpg');
+}
+
+/*================= Neko Cafe ===============*/
+.card[for="NC1"] {
+    background-image: url('neko1.jpg');
+}
+.card[for="NC2"] {
+    background-image: url('neko2.jpeg');
+}
+.card[for="NC3"] {
+    background-image: url('neko3.jpeg');
+}
+.card[for="NC4"] {
+    background-image: url('neko4.jpeg');
+}
+
+/*================= Dragoon Diner ===============*/
+.card[for="DD1"] {
+    background-image: url('dragon1.jpg');
+}
+.card[for="DD2"] {
+    background-image: url('dragon2.jpg');
+}
+.card[for="DD3"] {
+    background-image: url('dragon3.jpg');
+}
+.card[for="DD4"] {
+    background-image: url('dragon4.jpg');
+}
+
+/*================= Aqua Marina ===============*/
+.card[for="AM1"] {
+    background-image: url('aqua1.jpg');
+}
+.card[for="AM2"] {
+    background-image: url('aqua2.jpg');
+}
+.card[for="AM3"] {
+    background-image: url('aqua3.jpg');
+}
+.card[for="AM4"] {
+    background-image: url('aqua4.jpg');
+}
+
+/*================= Village House ===============*/
+.card[for="VH1"] {
+    background-image: url('melayu1.jpeg');
+}
+.card[for="VH2"] {
+    background-image: url('melayu2.jpeg');
+}
+.card[for="VH3"] {
+    background-image: url('melayu3.jpeg');
+}
+.card[for="VH4"] {
+    background-image: url('melayu4.jpeg');
+}
+
+.flex-container {
+    font-family: 'poppins', sans-serif;
+    display: flex;
+}
+.flex-child {
+    flex: 1;
+    height: 450px;
+}  
+.flex-child:first-child {
+    margin-right: 20px;
+}
+.flex-child:last-child{
+    border-left: 5px darkolivegreen solid;
+}
+
+.icon{
+    padding-right: 3px;
+    font-size: 1.4rem;
+}
+.text p{
+    padding-bottom: 10px;
+    font-size: 1.2rem;
+    padding-left: 45px;
+}
+.text2 p{
+    padding-bottom: 10px;
+    font-size: 1.2rem;
+    padding-left: 20px;
+}
+.text3 p{
+    font-family: "papyrus", cursive;
+    padding-bottom: 10px;
+    font-size: 1.7rem;
+    font-weight: bold;
+    padding: 0 15%;
+    text-align: center;
+}

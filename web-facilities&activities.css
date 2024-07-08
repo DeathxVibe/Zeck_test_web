@@ -1,0 +1,149 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header{
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-image: url(Gym.jpg)
+}
+  
+ul#menu li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 18px;
+    text-decoration: none;
+    font-family: "Georgia", serif;
+    font-size: 15px;
+    transition: 0.5s;
+  }
+  
+ul#menu li a:hover:not(.active) {
+    background-color: #795c34;
+    border-radius: 15px;
+    transition: 0.5s;
+}
+  
+.active {
+    background-color: teal;
+    border-radius: 15px;
+}
+
+nav#navbar{
+    width: 100%;
+    text-align: center;
+}
+
+.logo{
+    width: 150px;
+    margin: 20px 0;
+    cursor: pointer;
+}
+
+nav#navbar ul{
+    background: #af8c72;
+    width: 100%;
+}
+
+nav#navbar ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 18px 1px;
+    color: white;
+}
+
+nav#navbar.sticky{
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 13px 50px;
+    background: #af8c72;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: padding 1s;
+}
+
+nav#navbar.sticky ul{
+    width: auto;
+}
+
+.titleText{
+    text-align: center;
+    font-family: "Papyrus", cursive;
+    font-size: 3.5rem;
+    margin: 50px 0;  
+    font-weight: bold;
+    padding: 0 30px;
+}
+
+hr{
+    margin: 0 15%;
+    height: 4px;
+    border-width: 0;
+    background-color: tan;
+}
+
+.BigText{
+    text-align: center;
+    font-family: "Papyrus", cursive;
+    font-size: 3rem;
+    margin: 50px 0;  
+    font-weight: bold;
+    padding: 0 30px;
+}
+
+.flex-container {
+    font-family: 'poppins', sans-serif;
+    display: flex;
+}
+
+.flex-child {
+    flex: 1;
+    height: 325px;
+}  
+
+.flex-child:first-child {
+    margin-right: 20px;
+}
+
+img.picture{
+    border: 10px white solid;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-left: 50px;
+    margin-top: 20px;
+    object-fit: cover;
+    object-position: center;
+    transition: 0.5s;
+}
+img.picture:hover{
+    margin-left: 37px;
+    margin-top: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    width: 490px;
+    height: 270px;
+    transition: 0.5s;
+}
+.text h3{
+    font-family: "Papyrus", fantasy;
+    font-size: 2.5rem;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    padding-left: 50px;
+}
+.text p{
+    padding-bottom: 6px;
+    font-size: 1.2rem;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+.icon{
+    padding-right: 3px;
+    font-size: 1.4rem;
+}
